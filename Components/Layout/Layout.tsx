@@ -4,7 +4,7 @@ import Navigation from '../Navigation/Navigation'
 import Footer from '../Footer/Footer'
 
 interface LayoutProps {
-    children: ReactElement
+    children: ReactElement<any>
 }
 
 const Layout: FC<LayoutProps> = ({children}: LayoutProps) => {

@@ -1,4 +1,4 @@
-import {FC} from 'react';
+import { FC, type JSX } from 'react';
 import {FaPython} from 'react-icons/fa';
 import {IoMdMicrophone} from 'react-icons/io';
 import {AiFillAppstore} from 'react-icons/ai';
