@@ -1,26 +1,15 @@
 {
-  "name": "learn-starter",
-  "version": "0.1.0",
-  "private": true,
+  "name": "cosmic-chaos",
+  "type": "module",
+  "version": "1.0.0",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "eslint-config-next": "^13.4.12",
-    "framer-motion": "^4.1.17",
-    "next": "^14.1.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.3.1",
-    "react-intersection-observer": "^8.32.1",
-    "sass": "^1.38.0"
-  },
-  "devDependencies": {
-    "@types/node": "^18.7.14",
-    "@types/react": "^18.0.18",
-    "typescript": "^4.8.2"
+    "astro": "^5.1.5"
   }
 }
