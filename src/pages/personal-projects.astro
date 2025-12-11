@@ -4,28 +4,20 @@ import Project from '../components/Project.astro';
 import Sidebar from '../components/Sidebar.astro';
 const projects = [
   {
-    title: "TeleJS",
+    title: "Mind Garden AI",
     desc: [
-      "Built a lightweight, open-source Slack API framework for efficient bot development",
-      "Developed in Node.js and published as an NPM package"
+      "Built an AI web application that helped users navigate through their mental health challenges.",
+      "Developed using NextJS for frontend and Flask for backend"
     ],
-    tech: ["Node.js", "NPM"]
+    tech: ["NextJS", "Flask", "Tailwind"]
   },
   {
-    title: "pyPrompter",
+    title: "TrendSet.tech",
     desc: [
-      "Contributed to a popular open-source Python pip package for building interactive CLIs",
-      "Developed a feature that lets you 'freeze' inquirer choices"
+      "Automate the process of logo generation and bio creation with AI to start marketing their products.",
+      "Developed with React for frontend and Flask with MongoDB for backend."
     ],
-    tech: ["Python"]
-  },
-  {
-    title: "WebAssetHub",
-    desc: [
-      "Created a web scraper tool that monitors digital assets across multiple platforms and offers them at competitive prices",
-      "Sold over 700 items"
-    ],
-    tech: ["Python", "Selenium"]
+    tech: ["React", "Flask","MongoDB"]
   }
 ];
 ---
@@ -33,7 +25,7 @@ const projects = [
 <!DOCTYPE html>
 <html
 >
-  <Header title="Personal Projects | Sam Bernstein" />
+  <Header title="Personal Projects | Bakhtiar Reza" />
   <body>
     <div class="content">
         <Sidebar selectedItem="personal-projects" />
