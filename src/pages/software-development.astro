@@ -1,0 +1,71 @@
+---
+import Header from "../components/Header.astro";
+import Project from "../components/Project.astro";
+import Sidebar from "../components/Sidebar.astro";
+const projects = [
+  {
+    title: "Vanguard Inc.",
+    desc: [
+      "Develop and maintain Java webservices supporting financial rebalancing and processing",
+      "Designed and implemented backend architecture",
+      "Contributed to RESTful API design",
+    ],
+    tech: ["Java", "SpringBoot", "Python", "AWS"]
+  },
+  {
+    title: "Toast Inc.",
+    desc: [
+      "Worked on the Mobile Order & Payments team with eight engineers on Toast Mobile Order & Pay™",
+      "Participate in designing, estimating effort, implementing, testing, debugging, configuring, integrating and documenting database, middle-tier and front-end code",
+      "Diagnose performance bottlenecks and implement optimizations up to thousands of customers."
+    ],
+    tech: ["React", "GraphQL", "Kotlin", "Jenkins"]
+  },
+  {
+    title: "Federal Reserve Bank of Philadelphia",
+    desc: [
+      "Made Webpages via React, utilizing PnPjs and Typescript to make HTTP Requests to SharePoint Lists and created the user interface using Material UI",
+      "Automated repetitive tasks by creating automated scripts. The scripts significantly reduced the time needed to perform these tasks, increasing overall productivity by 20%",
+      "Prototyped an app as a proof of concept that visualized data from past bank events with their related findings and action steps with custom bar graphs. This shortened the time for analysis by 30% for the Quality Assurance team"
+    ],
+    tech: ["React", "Node.js", "Microsoft PowerApps", "Microsoft Power Automate"]
+  }
+];
+---
+
+<!DOCTYPE html>
+<html
+>
+  <Header title="Software Development | Bakhtiar Reza" />
+  <body>
+    <div class="content">
+        <Sidebar selectedItem="software-development" />
+      <nav class="main">
+        <div class="container">
+          <div class="back-nav-container">
+            <a href="/" class="back-nav-button w-inline-block"
+              ><img src="/assets/back.svg" loading="lazy" alt="" class="back-nav-img" />
+              <div>Back</div></a
+            >
+          </div>
+          <div class="content-container">
+            <h1>Software Development</h1>
+            <section class="items-container">
+                <div class="resouce-items">
+                    {projects.map(project => (
+                      <Project 
+                        title={project.title} 
+                        desc={project.desc}
+                        tech={project.tech}
+                      />
+                    ))}
+                  </div>
+            </section>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+  </body>
+</html>

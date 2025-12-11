@@ -1,0 +1,53 @@
+---
+import Header from '../components/Header.astro';
+import Project from "../components/Project.astro";
+import Sidebar from "../components/Sidebar.astro";
+const projects = [
+  {
+    title: "Vanguard Inc.",
+    desc: [
+      "Maintained the CI/CD pipeline for our Java/Python webservice applications.",
+      "Created necessary resources for our webservices using Cloudformation.",
+      "Authored multiple workflows to run multiple jobs in parallel for testing and building our application.",
+    ],
+    tech: ["Github CI/CD", "AWS"]
+  }
+];
+---
+
+<!DOCTYPE html>
+<html
+>
+  <Header title="DevOps | Bakhtiar Reza" />
+  <body>
+    <div class="content">
+        <Sidebar selectedItem="devops" />
+      <nav class="main">
+        <div class="container">
+          <div class="back-nav-container">
+            <a href="/" class="back-nav-button w-inline-block"
+              ><img src="/assets/back.svg" loading="lazy" alt="" class="back-nav-img" />
+              <div>Back</div></a
+            >
+          </div>
+          <div class="content-container">
+            <h1>DevOps</h1>
+            <section class="items-container">
+                <div class="resouce-items">
+                    {projects.map(project => (
+                      <Project 
+                        title={project.title} 
+                        desc={project.desc}
+                        tech={project.tech}
+                      />
+                    ))}
+                  </div>
+            </section>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+  </body>
+</html>

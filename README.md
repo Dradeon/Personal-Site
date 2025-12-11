@@ -1,27 +1,23 @@
-## Recent Update
-- Migrated remaining files to TypeScript
+# Codefolio
+An open-source portfolio for devs to showcase their projects, coding skills and perosnal story.
 
-# Personal Portfolio Site
+## Quick Start
 
-This is my personal portfolio that showcases my skills and features my built projects.
+```bash
+npm create astro@latest -- --template danielunited/codefolio
 
-## Technologies used and why I use them
-- NextJS
-  * Static Site Generation
-  * Optimized Images
-  * File-based Routing / Dynamic Routing
-- Sass
-- Framer Motion
-  * Declarative Syntax
-  * Simple to Configure Animations (Staggered Animation in HomePage)
+# Follow the interactive prompts to create the project
 
-## Challenges while building
-- Organizing the file structure of my project
-- Dynamic Routing
+cd <your-project-name>
+npm run dev     # Will start the local development server at http://localhost:4321 by default
 
-## Future Plans
-- Redo some framer motion animations on home page
-- Add previous Employment after Relevant Skills
-- Add Featured Projects to Home
-- Introduce API Routes into NextJS Project for data
-- [x] Migrate from Javascript to Typescript
+```
+
+## Deployment
+The current branch can be fully static built and deployed on any static hosting platform.
+
+For deployment methods on various platforms, refer to the [Astro Official Deployment Guide](https://docs.astro.build/en/guides/deploy/).
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
